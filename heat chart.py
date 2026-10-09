@@ -29,7 +29,7 @@ ax.set_yticklabels(time_slots)
 for i in range (len(time_slots)):
     for j in range(len(days)):
         val = traffic_data[i,j]
-        text_color = 'white'if val >= 1500 else "black"
+        text_color = 'white'if val >= 1800 else "black"
         text_weight = "bold" if val >= 1500 else "normal"
         ax.text(
             j,i,
